@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ejemplo</title>
+    <!-- Incluye Bootstrap CSS para estilos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <style>
+    .login-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .login-square {
+        display: flex;
+        width: 600px; /* Ancho fijo para el cuadrado */
+        height: 400px; /* Alto fijo para el cuadrado */
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden; /* Para asegurarse de que el contenido no desborde el contenedor */
+    }
+    .login-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        background-color: #f0f0f0; /* Color de fondo para el área de la imagen */
+    }
+    .login-image img {
+        max-width: 80%; /* Ajusta el ancho máximo de la imagen */
+        max-height: 80%; /* Ajusta la altura máxima de la imagen */
+        object-fit: contain; /* Ajusta la imagen para que se ajuste dentro del contenedor sin recortarla */
+    }
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        padding: 20px;
+        background-color: #f8f9fa;
+    }
+    .login-form .form-label {
+        margin-bottom: .5rem;
+    }
+    .form-footer {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .form-footer a {
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+<div class="container login-container">
+    <div class="login-square">
+        <!-- Imagen a la izquierda -->
+        <div class="login-image d-none d-md-flex">
+            <img src="aaa.jpg" alt="Imagen de inicio de sesión">
+        </div>
+        <!-- Formulario de inicio de sesión -->
+        <div class="login-form">
+            <h1 class="mb-4">Iniciar sesión</h1>
+            <form>
+                <div class="mb-3">
+                    <label  class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="inputUsuario" placeholder="Introduce tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label " class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Introduce tu contraseña">
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                    <a href="#" class="btn btn-secondary">Registrar</a>
+                </div>
+                <div class="form-footer">
+                    <a href="#" class="btn btn-link">¿Olvidaste tu contraseña?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+    <!-- Incluye Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
